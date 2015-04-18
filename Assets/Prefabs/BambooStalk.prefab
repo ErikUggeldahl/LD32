@@ -36,9 +36,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 197494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06008853d876e254fa9a1ab1de0ec2d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 756eab7037577664ab2bfdcfbd89a910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bambooGO: {fileID: 186788, guid: 905d42fbe24a2304da28e87df23765e9, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -5,14 +5,27 @@ public class BambooGrowth : MonoBehaviour
 {
 	[SerializeField]
 	Transform nextAnchor;
+	public Transform NextAnchor { get { return nextAnchor; } }
+
+	[SerializeField]
+	MeshFilter meshFilter;
+
+	[SerializeField]
+	Mesh segmentMesh;
+
+	[SerializeField]
+	Mesh topSegmentMesh;
 
 	const float startYScale = 0.1f;
 	const float growthTimeSec = 0.01f;
+	//const float growthTimeSec = 1f;
 	const float growthRate = 1f / growthTimeSec;
 
 	public int Index { get;  set; }
 
 	public GrowStalk Stalk { get; set; }
+
+	bool canPierce = false;
 
 	public void StartGrowth()
 	{
@@ -23,6 +36,10 @@ public class BambooGrowth : MonoBehaviour
 
 	IEnumerator Grow()
 	{
+		canPierce = true;
+
+		meshFilter.mesh = topSegmentMesh;
+
 		while (transform.localScale.y < 1)
 		{
 			transform.localScale += new Vector3(0f, growthRate, 0f) * Time.deltaTime;
@@ -37,6 +54,10 @@ public class BambooGrowth : MonoBehaviour
 
 	void GrowNewSegment()
 	{
+		canPierce = false;
+
+		meshFilter.mesh = segmentMesh;
+
 		var nextSegment = Instantiate(gameObject, nextAnchor.position, transform.rotation * Stalk.Lean) as GameObject;
 
 		nextSegment.name = "Segment" + (Index + 1);
@@ -48,4 +69,22 @@ public class BambooGrowth : MonoBehaviour
 
 		growth.StartGrowth();
 	}
+
+	//void OnCollisionEnter(Collision collision)
+	//{
+	//	if (!canPierce)
+	//		return;
+
+	//	var collidedGO = collision.gameObject;
+		
+	//	if (collidedGO.layer == LayerMask.NameToLayer("Enemy"))
+	//	{
+	//		var joint = collidedGO.AddComponent<FixedJoint>();
+	//		joint.connectedBody = GetComponent<Rigidbody>();
+
+	//		collidedGO.GetComponent<Rigidbody>().isKinematic = true;
+
+	//		collidedGO.layer = LayerMask.NameToLayer("DeadEnemy");
+	//	}
+	//}
 }

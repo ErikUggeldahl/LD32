@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 432956}
   - 33: {fileID: 3382858}
   - 23: {fileID: 2312148}
-  - 114: {fileID: 11447258}
   m_Layer: 0
   m_Name: BambooModel
   m_TagString: Untagged
@@ -119,7 +118,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142130}
-  m_Mesh: {fileID: 4300000, guid: d6287d9f80d788444a3633caeb5155a2, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 4350c7230e8b85c4b99596bb1c531e1b, type: 3}
 --- !u!54 &5482548
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -147,18 +146,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .200000003, y: .5, z: .200000003}
   m_Center: {x: 0, y: .25, z: 0}
---- !u!114 &11447258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142130}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2613dcbca61db6640ada65a7613cc3b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextAnchor: {fileID: 0}
 --- !u!114 &11475274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,6 +158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextAnchor: {fileID: 484774}
+  meshFilter: {fileID: 3382858}
+  segmentMesh: {fileID: 4300000, guid: d6287d9f80d788444a3633caeb5155a2, type: 3}
+  topSegmentMesh: {fileID: 4300000, guid: 4350c7230e8b85c4b99596bb1c531e1b, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

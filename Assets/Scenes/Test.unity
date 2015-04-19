@@ -184,12 +184,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428820, guid: 5fd891365c3d56148ae20ffc2b88a3be, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11482464, guid: 5fd891365c3d56148ae20ffc2b88a3be, type: 2}
-      propertyPath: landSound
-      value: 
-      objectReference: {fileID: 8300000, guid: a2a6c4d16a1ab344296ce606aa93c842, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fd891365c3d56148ae20ffc2b88a3be, type: 2}
   m_IsPrefabParent: 0

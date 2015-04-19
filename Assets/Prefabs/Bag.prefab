@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 472002}
   - 135: {fileID: 13583142}
   - 114: {fileID: 11490916}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Bag
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -192,6 +192,7 @@ ModelImporter:
     7400002: IdleSmell
     7400004: IdleScratch
     7400006: Run
+    7400008: Sitting
     9500000: //RootNode
     13700000: PandaHiRes
   materials:
@@ -587,6 +588,130 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 400
       lastFrame: 427
+      wrapMode: 0
+      orientationOffsetY: -.100000001
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DRoot
+        weight: 1
+      - path: DRoot/BSpine1
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2/BLLeg3
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2/BLLeg3/BLLegEnd
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2/BLLeg3/Claws003
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2/BLLeg3/Claws003/Claw015
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2/BLLeg3/Claws003/Claw016
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2/BLLeg3/Claws003/Claw017
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2/BLLeg3/Claws003/Claw018
+        weight: 1
+      - path: DRoot/BSpine1/BLLeg1/BLLeg2/BLLeg3/Claws003/Claw019
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2/BRLeg3
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2/BRLeg3/BRLegEnd
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2/BRLeg3/Claws002
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2/BRLeg3/Claws002/Claw010
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2/BRLeg3/Claws002/Claw011
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2/BRLeg3/Claws002/Claw012
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2/BRLeg3/Claws002/Claw013
+        weight: 1
+      - path: DRoot/BSpine1/BRLeg1/BRLeg2/BRLeg3/Claws002/Claw014
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2/BLArm3
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2/BLArm3/BLArmEnd
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2/BLArm3/Claws001
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2/BLArm3/Claws001/Claw005
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2/BLArm3/Claws001/Claw006
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2/BLArm3/Claws001/Claw007
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2/BLArm3/Claws001/Claw008
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BLArm1/BLArm2/BLArm3/Claws001/Claw009
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BNeck
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BNeck/BHead
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BNeck/BHead/BHeadEnd
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BNeck/BHead/Eyes
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2/BRArm3
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2/BRArm3/BRArmEnd
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2/BRArm3/Claws
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2/BRArm3/Claws/Claw
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2/BRArm3/Claws/Claw001
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2/BRArm3/Claws/Claw002
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2/BRArm3/Claws/Claw003
+        weight: 1
+      - path: DRoot/BSpine1/BSpine2/BRArm1/BRArm2/BRArm3/Claws/Claw004
+        weight: 1
+      - path: PandaHiRes
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Sitting
+      takeName: Take 001
+      firstFrame: 430
+      lastFrame: 490
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

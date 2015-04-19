@@ -1,5 +1,80 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &102192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486210}
+  m_Layer: 0
+  m_Name: LeafPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &106766
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 410292}
+  m_Layer: 0
+  m_Name: LeafPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &119102
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 487108}
+  m_Layer: 0
+  m_Name: LeafPoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &125752
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 455134}
+  m_Layer: 0
+  m_Name: LeafPoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &136938
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 457278}
+  m_Layer: 0
+  m_Name: LeafPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &142130
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +107,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &168794
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 478998}
+  m_Layer: 0
+  m_Name: LeafPoint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &185382
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 449046}
+  m_Layer: 0
+  m_Name: LeafPoint8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &186788
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,9 +145,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427554}
-  - 114: {fileID: 11475274}
-  - 54: {fileID: 5482548}
   - 65: {fileID: 6523552}
+  - 114: {fileID: 11475274}
+  - 114: {fileID: 11414632}
   m_Layer: 0
   m_Name: Bamboo
   m_TagString: Untagged
@@ -50,6 +155,63 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &187344
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 440422}
+  m_Layer: 0
+  m_Name: LeafPoint7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &196044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 451028}
+  m_Layer: 0
+  m_Name: LeafParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &197632
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 451886}
+  m_Layer: 0
+  m_Name: LeafPoint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &410292
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106766}
+  m_LocalRotation: {x: .0268756598, y: .722768307, z: -.0281522628, w: .68999356}
+  m_LocalPosition: {x: .0939999968, y: 0, z: .00200000009}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486210}
+  m_RootOrder: 2
 --- !u!4 &427554
 Transform:
   m_ObjectHideFlags: 1
@@ -60,8 +222,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 451028}
   - {fileID: 484774}
   - {fileID: 432956}
+  - {fileID: 486210}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &432956
@@ -75,7 +239,91 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427554}
+  m_RootOrder: 2
+--- !u!4 &440422
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187344}
+  m_LocalRotation: {x: .209565237, y: .663637102, z: .201803625, w: -.689161479}
+  m_LocalPosition: {x: -.0879999995, y: 0, z: -.00100000005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486210}
+  m_RootOrder: 6
+--- !u!4 &449046
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185382}
+  m_LocalRotation: {x: .131911129, y: .413909853, z: .0607564859, w: -.898658335}
+  m_LocalPosition: {x: -.0500000007, y: 0, z: .063000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486210}
+  m_RootOrder: 7
+--- !u!4 &451028
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427554}
+  m_RootOrder: 0
+--- !u!4 &451886
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197632}
+  m_LocalRotation: {x: 0, y: .999864399, z: 0, w: -.0164710488}
+  m_LocalPosition: {x: .00100000005, y: 0, z: -.0890000015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486210}
+  m_RootOrder: 0
+--- !u!4 &455134
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125752}
+  m_LocalRotation: {x: 0, y: .922103167, z: 0, w: .386944234}
+  m_LocalPosition: {x: .0689999983, y: 0, z: -.061999999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486210}
   m_RootOrder: 1
+--- !u!4 &457278
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136938}
+  m_LocalRotation: {x: -.0537263379, y: .368815064, z: .0213592965, w: .927702963}
+  m_LocalPosition: {x: .0540000014, y: 0, z: .0689999983}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486210}
+  m_RootOrder: 3
+--- !u!4 &478998
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168794}
+  m_LocalRotation: {x: -.0197674632, y: .959035873, z: -.0691905171, w: -.273992866}
+  m_LocalPosition: {x: -.050999999, y: 0, z: -.075000003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486210}
+  m_RootOrder: 5
 --- !u!4 &484774
 Transform:
   m_ObjectHideFlags: 1
@@ -87,7 +335,39 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 427554}
-  m_RootOrder: 0
+  m_RootOrder: 1
+--- !u!4 &486210
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 451886}
+  - {fileID: 455134}
+  - {fileID: 410292}
+  - {fileID: 457278}
+  - {fileID: 487108}
+  - {fileID: 478998}
+  - {fileID: 440422}
+  - {fileID: 449046}
+  m_Father: {fileID: 427554}
+  m_RootOrder: 3
+--- !u!4 &487108
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: .0939999968}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486210}
+  m_RootOrder: 4
 --- !u!23 &2312148
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -119,21 +399,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142130}
   m_Mesh: {fileID: 4300000, guid: 4350c7230e8b85c4b99596bb1c531e1b, type: 3}
---- !u!54 &5482548
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186788}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &6523552
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -146,6 +411,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .200000003, y: .5, z: .200000003}
   m_Center: {x: 0, y: .25, z: 0}
+--- !u!114 &11414632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e270d112954088e468277e3faba9e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leafModels:
+  - {fileID: 114504, guid: 215dd7b4f2670e949bd9de44cc477a4f, type: 2}
+  - {fileID: 146726, guid: f199fc97889aaf641acbe9b4420ee7f6, type: 2}
+  leafPoints:
+  - {fileID: 487108}
+  - {fileID: 457278}
+  - {fileID: 410292}
+  - {fileID: 455134}
+  - {fileID: 451886}
+  - {fileID: 478998}
+  - {fileID: 440422}
+  - {fileID: 449046}
+  leafParent: {fileID: 451028}
 --- !u!114 &11475274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -158,6 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextAnchor: {fileID: 484774}
+  segmentGO: {fileID: 186788}
   meshFilter: {fileID: 3382858}
   segmentMesh: {fileID: 4300000, guid: d6287d9f80d788444a3633caeb5155a2, type: 3}
   topSegmentMesh: {fileID: 4300000, guid: 4350c7230e8b85c4b99596bb1c531e1b, type: 3}

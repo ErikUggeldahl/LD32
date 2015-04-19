@@ -8,6 +8,9 @@ public class BambooGrowth : MonoBehaviour
 	public Transform NextAnchor { get { return nextAnchor; } }
 
 	[SerializeField]
+	GameObject segmentGO;
+
+	[SerializeField]
 	MeshFilter meshFilter;
 
 	[SerializeField]
@@ -18,7 +21,6 @@ public class BambooGrowth : MonoBehaviour
 
 	const float startYScale = 0.1f;
 	const float growthTimeSec = 0.01f;
-	//const float growthTimeSec = 1f;
 	const float growthRate = 1f / growthTimeSec;
 
 	public int Index { get;  set; }
@@ -58,7 +60,7 @@ public class BambooGrowth : MonoBehaviour
 
 		meshFilter.mesh = segmentMesh;
 
-		var nextSegment = Instantiate(gameObject, nextAnchor.position, transform.rotation * Stalk.Lean) as GameObject;
+		var nextSegment = Instantiate(segmentGO, nextAnchor.position, transform.rotation * Stalk.Lean) as GameObject;
 
 		nextSegment.name = "Segment" + (Index + 1);
 		nextSegment.transform.parent = transform;

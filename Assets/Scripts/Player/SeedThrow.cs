@@ -12,7 +12,7 @@ public class SeedThrow : MonoBehaviour
 	[SerializeField]
 	FirstPersonCamera cameraControl;
 
-	const float throwForce = 20f;
+	const float throwForce = 25f;
 
 	const int minSeedCount = 3;
 	const int maxSeedCount = 6;

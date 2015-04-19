@@ -17,6 +17,9 @@ public class GrowStalk : MonoBehaviour
 	[SerializeField]
 	GameObject bambooGO;
 
+	bool canPierce = true;
+	public bool CanPierce { get { return canPierce; } }
+
 	void Start()
 	{
 		sectionCount = Random.Range(minSections, maxSections);
@@ -32,5 +35,10 @@ public class GrowStalk : MonoBehaviour
 		var growth = bamboo.GetComponent<BambooGrowth>();
 		growth.Stalk = this;
 		growth.StartGrowth();
+	}
+
+	public void FinishGrowing()
+	{
+		canPierce = false;
 	}
 }

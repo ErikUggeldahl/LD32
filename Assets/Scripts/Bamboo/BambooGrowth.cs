@@ -45,8 +45,6 @@ public class BambooGrowth : MonoBehaviour
 
 	public GrowStalk Stalk { get; set; }
 
-	bool canPierce = false;
-
 	public void StartGrowth()
 	{
 		transform.localScale = new Vector3(1f, startYScale, 1f);
@@ -56,8 +54,6 @@ public class BambooGrowth : MonoBehaviour
 
 	IEnumerator Grow()
 	{
-		canPierce = true;
-
 		SetMeshToTop();
 
 		while (transform.localScale.y < 1)
@@ -73,12 +69,12 @@ public class BambooGrowth : MonoBehaviour
 
 		if (Index < Stalk.SectionCount)
 			GrowNewSegment();
+		else
+			Stalk.FinishGrowing();
 	}
 
 	void GrowNewSegment()
 	{
-		canPierce = false;
-
 		SetMeshToSegment();
 
 		var nextSegment = Instantiate(segmentGO, nextAnchor.position, transform.rotation * Stalk.Lean) as GameObject;
@@ -109,8 +105,8 @@ public class BambooGrowth : MonoBehaviour
 	{
 		Debug.Log("Collided with " + collision.gameObject.name);
 
-		//if (!canPierce)
-		//	return;
+		if (!Stalk.CanPierce)
+			return;
 
 		var collidedGO = collision.gameObject;
 
@@ -128,6 +124,6 @@ public class BambooGrowth : MonoBehaviour
 
 		GetComponentInChildren<MeshRenderer>().material.SetColor("Albedo", Color.black);*/
 
-		Destroy(collidedGO);
+		collidedGO.GetComponent<PandaMovement>().Die();
 	}
 }

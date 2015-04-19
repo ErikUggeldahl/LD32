@@ -11,7 +11,7 @@ public class PandaMovement : MonoBehaviour
 
 	Transform runningFrom;
 
-	const float safeDistance = 100f;
+	const float safeDistance = 80f;
 	const float maxSpeed = 10f;
 
 	public void StartRunning(Transform awayFrom)
@@ -50,5 +50,14 @@ public class PandaMovement : MonoBehaviour
 		}
 
 		animator.SetBool("Running", false);
+	}
+
+	public void Die()
+	{
+		Destroy(GetComponent<PandaAnimation>());
+		Destroy(animator);
+		GetComponent<Rigidbody>().isKinematic = true;
+		Destroy(GetComponentInChildren<PandaSight>());
+		Destroy(this);
 	}
 }

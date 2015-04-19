@@ -744,6 +744,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 440728}
   - 137: {fileID: 13707332}
+  - 205: {fileID: 20523612}
   m_Layer: 0
   m_Name: PandaHiRes
   m_TagString: Untagged
@@ -1274,8 +1275,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121920}
-  m_LocalRotation: {x: 0, y: -.733668506, z: 0, w: .679507554}
-  m_LocalPosition: {x: -43.1990013, y: 13.6780005, z: -.862999976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35.4000015, y: 2.74000001, z: 10.4799995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 478904}
@@ -2249,6 +2250,21 @@ SkinnedMeshRenderer:
     m_Center: {x: -1.22413802, y: -.91562891, z: -3.43322754e-05}
     m_Extent: {x: 2.48702598, y: 1.70052242, z: 1.26025558}
   m_DirtyAABB: 0
+--- !u!205 &20523612
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192708}
+  m_LocalReferencePoint: {x: -3.80277634e-05, y: -.40212965, z: 1.22606635}
+  m_Size: 5.9093442
+  m_LODs:
+  - screenRelativeHeight: .0542812124
+    fadeMode: 0
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 13707332}
+  m_Enabled: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

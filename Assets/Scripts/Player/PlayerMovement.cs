@@ -4,14 +4,14 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
 	float maxSpeed = 10f;
-	float moveForce = 20f;
+	float moveForce = 40f;
 
 	const float jumpForce = 20f;
 
 	bool canJump = false;
 	bool isJumpReady = true;
 	float jumpCooldown = 0.2f;
-	public AudioSource jumpSound;
+	public AudioClip jumpSound;
 
 	void Start()
 	{
@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 		movement.Normalize();
 
 		movement *= moveForce * Time.fixedDeltaTime;
+
 		movement = transform.TransformDirection(movement);
 		if (GetComponent<Rigidbody>().velocity.magnitude + movement.magnitude > maxSpeed)
 			return;
@@ -50,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
 			StartCoroutine("JumpCooldown");
-			jumpSound.Play();
+			GetComponent<AudioSource>().PlayOneShot(jumpSound);
 		}
 	}
 

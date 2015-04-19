@@ -127,6 +127,7 @@ GameObject:
   - 4: {fileID: 493784}
   - 33: {fileID: 3394772}
   - 23: {fileID: 2352626}
+  - 205: {fileID: 20504514}
   m_Layer: 0
   m_Name: Leaf2Model
   m_TagString: Untagged
@@ -454,6 +455,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164094}
   m_Mesh: {fileID: 4300012, guid: 6c456835bf67c0745af60db440495f47, type: 3}
+--- !u!205 &20504514
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164094}
+  m_LocalReferencePoint: {x: .207346886, y: -.212225467, z: -.286327302}
+  m_Size: .580212712
+  m_LODs:
+  - screenRelativeHeight: .0616321117
+    fadeMode: 0
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2352626}
+    - renderer: {fileID: 2381554}
+    - renderer: {fileID: 2367202}
+    - renderer: {fileID: 2332970}
+    - renderer: {fileID: 2378454}
+    - renderer: {fileID: 2349972}
+    - renderer: {fileID: 2367850}
+  m_Enabled: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

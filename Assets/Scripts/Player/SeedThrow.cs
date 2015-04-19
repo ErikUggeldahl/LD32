@@ -17,9 +17,16 @@ public class SeedThrow : MonoBehaviour
 	const int minSeedCount = 3;
 	const int maxSeedCount = 6;
 
+	bool canThrow = false;
+
+	public void EnableThrowing()
+	{
+		canThrow = true;
+	}
+
 	void Update()
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0) && canThrow)
 			ThrowSeeds();
 	}
 

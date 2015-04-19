@@ -26,7 +26,7 @@ ModelImporter:
     4300004: Stake001
     4300006: Stake002
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

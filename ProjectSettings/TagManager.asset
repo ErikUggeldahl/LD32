@@ -17,10 +17,10 @@ TagManager:
   - Enemy
   - DeadEnemy
   - Ground
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PandaSight
+  - BambooDistant
+  - Seed
   - 
   - 
   - 

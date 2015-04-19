@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-	float maxSpeed = 10f;
+	float maxSpeed = 12f;
 	float moveForce = 40f;
 
 	const float jumpForce = 20f;
@@ -11,11 +11,17 @@ public class PlayerMovement : MonoBehaviour
 	bool canJump = false;
 	bool isJumpReady = true;
 	float jumpCooldown = 0.2f;
-	public AudioClip jumpSound;
+
+	[SerializeField]
+	AudioClip jumpSound;
+	[SerializeField]
+	AudioClip landSound;
+
 
 	void Start()
 	{
 		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 	}
 
 	void Update()
@@ -65,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
 	public void JumpEnter()
 	{
 		canJump = true;
+
+		GetComponent<AudioSource>().PlayOneShot(landSound);
 	}
 
 	public void JumpExit()

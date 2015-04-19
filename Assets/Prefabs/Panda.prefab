@@ -26,6 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 476340}
   - 137: {fileID: 13788414}
+  - 205: {fileID: 20506072}
   m_Layer: 0
   m_Name: PandaHiRes
   m_TagString: Untagged
@@ -787,8 +788,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115938}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: .0884502903, z: 0, w: .996080577}
+  m_LocalPosition: {x: -3.71972251, y: 14.9789419, z: -13.5944748}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 466680}
@@ -2097,6 +2098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 9588566}
+  isSitting: 0
 --- !u!135 &13598818
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -2162,6 +2164,21 @@ SkinnedMeshRenderer:
     m_Center: {x: -1.22413802, y: -.91562891, z: -3.43322754e-05}
     m_Extent: {x: 2.48702598, y: 1.70052242, z: 1.26025558}
   m_DirtyAABB: 0
+--- !u!205 &20506072
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104832}
+  m_LocalReferencePoint: {x: -3.81469727e-05, y: -.402128696, z: 1.22606516}
+  m_Size: 5.90934277
+  m_LODs:
+  - screenRelativeHeight: .135840327
+    fadeMode: 0
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 13788414}
+  m_Enabled: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

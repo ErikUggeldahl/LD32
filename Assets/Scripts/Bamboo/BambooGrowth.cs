@@ -41,7 +41,7 @@ public class BambooGrowth : MonoBehaviour
 	const float growthTimeSec = 0.01f;
 	const float growthRate = 1f / growthTimeSec;
 
-	public int Index { get;  set; }
+	public int Index { get; set; }
 
 	public GrowStalk Stalk { get; set; }
 
@@ -65,7 +65,7 @@ public class BambooGrowth : MonoBehaviour
 			var scaleRemaining = 1f - transform.localScale.y;
 			var growth = Mathf.Clamp(growthRate * Time.deltaTime, 0f, scaleRemaining);
 
-			transform.localScale += new Vector3(0f, growthRate, 0f) * Time.deltaTime;
+			transform.localScale += new Vector3(0f, growth, 0f);
 			yield return null;
 		}
 
@@ -105,21 +105,29 @@ public class BambooGrowth : MonoBehaviour
 		meshFilterLOD1.mesh = segmentMeshLOD1;
 	}
 
-	//void OnCollisionEnter(Collision collision)
-	//{
-	//	if (!canPierce)
-	//		return;
+	void OnCollisionEnter(Collision collision)
+	{
+		Debug.Log("Collided with " + collision.gameObject.name);
 
-	//	var collidedGO = collision.gameObject;
-		
-	//	if (collidedGO.layer == LayerMask.NameToLayer("Enemy"))
-	//	{
-	//		var joint = collidedGO.AddComponent<FixedJoint>();
-	//		joint.connectedBody = GetComponent<Rigidbody>();
+		//if (!canPierce)
+		//	return;
 
-	//		collidedGO.GetComponent<Rigidbody>().isKinematic = true;
+		var collidedGO = collision.gameObject;
 
-	//		collidedGO.layer = LayerMask.NameToLayer("DeadEnemy");
-	//	}
-	//}
+		if (collidedGO.layer != LayerMask.NameToLayer("Enemy"))
+			return;
+
+		/*var joint = collidedGO.AddComponent<FixedJoint>();
+		joint.connectedBody = GetComponent<Rigidbody>();
+
+		collidedGO.GetComponent<Rigidbody>().isKinematic = true;
+
+		collidedGO.layer = LayerMask.NameToLayer("DeadEnemy");
+
+		collidedGO.GetComponent<PandaMovement>().Die();
+
+		GetComponentInChildren<MeshRenderer>().material.SetColor("Albedo", Color.black);*/
+
+		Destroy(collidedGO);
+	}
 }

@@ -183,7 +183,7 @@ GameObject:
   - 65: {fileID: 6523552}
   - 114: {fileID: 11475274}
   - 114: {fileID: 11414632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bamboo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

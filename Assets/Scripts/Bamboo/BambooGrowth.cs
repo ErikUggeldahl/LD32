@@ -19,6 +19,24 @@ public class BambooGrowth : MonoBehaviour
 	[SerializeField]
 	Mesh topSegmentMesh;
 
+	[SerializeField]
+	MeshFilter meshFilterLOD1;
+
+	[SerializeField]
+	Mesh segmentMeshLOD1;
+
+	[SerializeField]
+	Mesh topSegmentMeshLOD1;
+
+	[SerializeField]
+	MeshFilter meshFilterLOD2;
+
+	[SerializeField]
+	Mesh segmentMeshLOD2;
+
+	[SerializeField]
+	Mesh topSegmentMeshLOD2;
+
 	const float startYScale = 0.1f;
 	const float growthTimeSec = 0.01f;
 	const float growthRate = 1f / growthTimeSec;
@@ -40,10 +58,13 @@ public class BambooGrowth : MonoBehaviour
 	{
 		canPierce = true;
 
-		meshFilter.mesh = topSegmentMesh;
+		SetMeshToTop();
 
 		while (transform.localScale.y < 1)
 		{
+			var scaleRemaining = 1f - transform.localScale.y;
+			var growth = Mathf.Clamp(growthRate * Time.deltaTime, 0f, scaleRemaining);
+
 			transform.localScale += new Vector3(0f, growthRate, 0f) * Time.deltaTime;
 			yield return null;
 		}
@@ -58,7 +79,7 @@ public class BambooGrowth : MonoBehaviour
 	{
 		canPierce = false;
 
-		meshFilter.mesh = segmentMesh;
+		SetMeshToSegment();
 
 		var nextSegment = Instantiate(segmentGO, nextAnchor.position, transform.rotation * Stalk.Lean) as GameObject;
 
@@ -70,6 +91,18 @@ public class BambooGrowth : MonoBehaviour
 		growth.Stalk = Stalk;
 
 		growth.StartGrowth();
+	}
+
+	void SetMeshToTop()
+	{
+		meshFilter.mesh = topSegmentMesh;
+		meshFilterLOD1.mesh = topSegmentMeshLOD1;
+	}
+
+	void SetMeshToSegment()
+	{
+		meshFilter.mesh = segmentMesh;
+		meshFilterLOD1.mesh = segmentMeshLOD1;
 	}
 
 	//void OnCollisionEnter(Collision collision)

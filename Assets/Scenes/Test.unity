@@ -491,7 +491,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!4 &495193146 stripped
 Transform:
   m_PrefabParentObject: {fileID: 498944, guid: 52f09eaddd20c634291fd1710a214597, type: 2}
@@ -1200,7 +1200,7 @@ Transform:
   - {fileID: 2058643752}
   - {fileID: 216500540}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &1387771280 stripped
 Transform:
   m_PrefabParentObject: {fileID: 498944, guid: 52f09eaddd20c634291fd1710a214597, type: 2}
@@ -1760,4 +1760,4 @@ Transform:
   m_LocalScale: {x: 500, y: 1, z: 500}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3

@@ -12,6 +12,12 @@ public class SeedThrow : MonoBehaviour
 	[SerializeField]
 	FirstPersonCamera cameraControl;
 
+	[SerializeField]
+	AudioSource audioSource;
+
+	[SerializeField]
+	AudioClip throwSound;
+
 	const float throwForce = 25f;
 
 	const int minSeedCount = 3;
@@ -32,6 +38,8 @@ public class SeedThrow : MonoBehaviour
 
 	void ThrowSeeds()
 	{
+		audioSource.PlayOneShot(throwSound);
+
 		for (int i = 0; i < Random.Range(minSeedCount, maxSeedCount); i++)
 			ThrowSeed();
 	}

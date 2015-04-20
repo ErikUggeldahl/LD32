@@ -103,8 +103,6 @@ public class BambooGrowth : MonoBehaviour
 
 	void OnCollisionEnter(Collision collision)
 	{
-		Debug.Log("Collided with " + collision.gameObject.name);
-
 		if (!Stalk.CanPierce)
 			return;
 
@@ -112,17 +110,6 @@ public class BambooGrowth : MonoBehaviour
 
 		if (collidedGO.layer != LayerMask.NameToLayer("Enemy"))
 			return;
-
-		/*var joint = collidedGO.AddComponent<FixedJoint>();
-		joint.connectedBody = GetComponent<Rigidbody>();
-
-		collidedGO.GetComponent<Rigidbody>().isKinematic = true;
-
-		collidedGO.layer = LayerMask.NameToLayer("DeadEnemy");
-
-		collidedGO.GetComponent<PandaMovement>().Die();
-
-		GetComponentInChildren<MeshRenderer>().material.SetColor("Albedo", Color.black);*/
 
 		collidedGO.GetComponent<PandaMovement>().Die();
 	}

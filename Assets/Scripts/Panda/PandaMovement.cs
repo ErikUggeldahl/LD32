@@ -9,6 +9,9 @@ public class PandaMovement : MonoBehaviour
 	[SerializeField]
 	PandaAnimation pandaAnimation;
 
+	[SerializeField]
+	AudioClip alertSound;
+
 	Transform runningFrom;
 
 	const float safeDistance = 80f;
@@ -16,6 +19,11 @@ public class PandaMovement : MonoBehaviour
 
 	public void StartRunning(Transform awayFrom)
 	{
+		if (runningFrom != null)
+			return;
+
+		GetComponent<AudioSource>().PlayOneShot(alertSound);
+
 		runningFrom = awayFrom;
 
 		StartCoroutine(Run());
@@ -50,10 +58,17 @@ public class PandaMovement : MonoBehaviour
 		}
 
 		animator.SetBool("Running", false);
+
+		runningFrom = null;
 	}
 
 	public void Die()
 	{
+		Debug.Log("Decreasing! " + gameObject.name);
+		ScoreCount.Instance.Decrease();
+
+		GetComponent<PandaDeathSound>().Play();
+
 		Destroy(GetComponent<PandaAnimation>());
 		Destroy(animator);
 		GetComponent<Rigidbody>().isKinematic = true;

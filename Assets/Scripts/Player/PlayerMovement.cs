@@ -16,12 +16,20 @@ public class PlayerMovement : MonoBehaviour
 	AudioClip jumpSound;
 	[SerializeField]
 	AudioClip landSound;
+	[SerializeField]
+	AudioClip joinGame;
+	[SerializeField]
+	AudioClip victorySound;
 
 
 	void Start()
 	{
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
+
+		GetComponent<AudioSource>().PlayOneShot(joinGame);
+
+		ScoreCount.Instance.OnVictory += PlayVictorySound;
 	}
 
 	void Update()
@@ -83,5 +91,10 @@ public class PlayerMovement : MonoBehaviour
 	void Turn()
 	{
 		transform.Rotate(Vector3.up, Input.GetAxis("Mouse X"));
+	}
+
+	void PlayVictorySound()
+	{
+		GetComponent<AudioSource>().PlayOneShot(victorySound);
 	}
 }

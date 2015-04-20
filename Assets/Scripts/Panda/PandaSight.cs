@@ -9,8 +9,6 @@ public class PandaSight : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("Found player: " + other.gameObject.name);
-
 		movement.StartRunning(other.transform);
 	}
 }

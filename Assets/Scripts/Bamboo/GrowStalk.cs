@@ -17,11 +17,16 @@ public class GrowStalk : MonoBehaviour
 	[SerializeField]
 	GameObject bambooGO;
 
+	[SerializeField]
+	AudioClip growSound;
+
 	bool canPierce = true;
 	public bool CanPierce { get { return canPierce; } }
 
 	void Start()
 	{
+		GetComponent<AudioSource>().PlayOneShot(growSound);
+
 		sectionCount = Random.Range(minSections, maxSections);
 
 		var leanRand = Random.insideUnitCircle * maxLean;

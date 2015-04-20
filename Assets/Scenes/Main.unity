@@ -3543,7 +3543,7 @@ TextMesh:
 
     Left click to throw seeds.
 
-    Use bamboo to eliminate them'
+    Use bamboo to eliminate them.'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -4428,7 +4428,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1813671677}
-  m_Text: Pick this up
+  m_Text: Pick this up.
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
